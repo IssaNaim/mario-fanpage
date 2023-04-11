@@ -1,0 +1,232 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    font-family: "Mario";
+}
+
+h3,h4,h5{
+    margin: 0px;
+    padding: 0px;
+}
+
+h4{
+    font-size: 30px;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    padding: 0px 5vw 0px 5vw;
+    height: 9vh;
+    background-color: rgb(64, 255, 0);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0);
+    position: fixed;
+    min-width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+nav img{
+    max-height: 7vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+nav a{
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: 700;
+    transition-duration: 150ms;
+}
+
+nav a:hover{
+    transform: scale(0.75);
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero-section{
+    text-align: center;
+}
+
+.hero-text{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: "Mario";
+    font-size: 2.5vw;
+    text-shadow: 10px 10px #000000;
+    letter-spacing: 5px;
+}
+
+.hero-text img{
+    max-width: 400px;
+}
+
+.form-card{
+    font-size: 25px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50%;
+    min-height: 400px;
+    min-width: 25vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    background-color: rgb(0, 247, 255);
+    box-shadow: 0 2px 4px 0 rgb(0, 0, 0);
+    text-align: left;
+    transition-duration: 150ms;
+}
+
+
+.opac{
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    opacity: 0.5;
+}
+.opac:hover{
+    opacity: 1;
+}
+
+.form-card input[type="submit"]{
+    font-family: "Mario";
+    font-size: 16px;
+    max-width: 50%;
+    padding: 10px;
+    background-color: rgb(0, 76, 255);
+    color: black;
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    transition-duration: 200ms;
+}
+
+.form-card input[type="submit"]:hover{
+    background-color: rgb(77, 255, 0);
+    color: black;
+}
+
+input{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden;
+    z-index: -1;
+    background-color: black;
+}
+
+.video-container video {
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    margin-top:9vh;
+}
+
+.news{
+    position: absolute;
+    top: -15vh;
+    height: 115vh;
+}
+
+.games{
+    position: absolute;
+    top: 9vh;
+    height: 91vh;
+}
+
+.join-section{
+    background: url("./img/join.jpg") no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+
+
+.characters-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.character-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 600px;
+    margin: 15px;
+    border-radius: 10px;
+    background-color: rgb(0, 247, 255);
+    padding: 20px;
+}
+
+.character-card img{
+    height: 250px;
+    justify-self: center;
+}
+
+.char-text p{
+    color:black;
+}
+
+.char-text h4{
+    text-shadow: 2px 2px rgb(255, 162, 0);
+}
+
+.char-h1{
+    margin-top: 15vh;
+    text-align: center;
+    font-size: 35px;
+    color: rgb(255, 162, 0);
+}
+
+.about-section{
+    margin-top: 105vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px;
+}
+
+.about-section img{
+    width: 50vw;
+}
+
+.about-section .about-text{
+    align-self: center;
+}
+
+footer{
+    text-align: center;
+    color: rgb(80, 80, 80);
+}
+
+@font-face {
+    font-family: "Mario";
+    src: url(./fonts/SuperMario256.ttf);
+}
