@@ -81,9 +81,9 @@ nav a:hover{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 50%;
+    height: 40%;
     min-height: 400px;
-    min-width: 25vw;
+    min-width: 30vw;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -224,6 +224,33 @@ input{
 footer{
     text-align: center;
     color: rgb(80, 80, 80);
+}
+
+.art{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-top: 20vh;
+}
+
+.art-container{
+    width: 500px;
+    height: fit-content;
+    border-radius: 10px;
+    background-color: rgb(255, 127, 127);
+    padding: 20px;
+    align-self: top;
+    justify-self: center;
+}
+
+.art-container img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0);
+}
+
+.art-container img{
+    width: 460px;
+    transition-duration: 200ms;
 }
 
 @font-face {
